@@ -1,32 +1,25 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    background-color: gray;
     margin: 40px 200px 0;
     padding-right: 90px;
     height: 20px;
 }
 
-h1 {
-    text-align: left;
-    color: #333;
-    padding:10px 225px;
-    width: 400px;
-    
-}
-p{
-    text-align: left;
-    color: #333;
-    padding-left:225px; 
-    width: 70%;
-}
 
+
+.counter{
+    background-color: bisque;
+    padding: 10px 10px;
+    border-radius: 7px;
+}
 .counter-container {
     max-width: 400px;
     margin: 0px auto;
-    background-color: rgb(255, 242, 227);
-    padding: 80px;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
     text-align: center;
 }
 
@@ -46,7 +39,7 @@ p{
     font-size: 20px;
     outline: none;
     border-color:  rgba(149, 165, 229, 0.84);
-    
+    border-radius: 7px;
 }
 .clear{
     height: 70px;
@@ -56,14 +49,14 @@ p{
 
 
 
-.buttons {
+.button {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 
-.buttons button {
+.button button {
     font-size: 18px;
     border: none;
     border-radius: 5px;
@@ -72,22 +65,21 @@ p{
     transition: background-color 0.3s;
 }
 
-.buttons button.increment {
+.button button.increment {
     background-color: #4caf50;
     padding: 30px 100px;
 }
 
-.buttons button.increment:hover {
+.button button.increment:hover {
     background-color: #45a049;
 }
 
-.buttons button.decrement {
+.button button.decrement {
     background-color: #555;
-    padding: 30px 100px;
-
+    padding: 20px 100px;
 
 }
 
-.buttons button.decrement:hover {
+.button button.decrement:hover {
     background-color: #444;
 }

@@ -9,45 +9,24 @@
 </head>
 
 <body>
-    <h1>Click Counter</h1>
-    <p>Click counter online.click + or space to count:</p>
+  
     <div class="counter-container">
+        <h1>Click Counter</h1>
+        <p>Click counter online.click + or space to count:</p>
+        <div class="counter">
         <div class="input-box">
-            <input type="number" id="counter" value="0" min="0">
+            <input type="number" id="counter" min="0" placeholder="0">
                 <button class="clear" onclick="clearCounter()"> X </button>
         </div>
 
-        <div class="buttons">
+        <div class="button">
             <button class="increment" onclick="increment()">+</button>
             <button class="decrement" onclick="decrement()">-</button>
         </div>
     </div>
+    </div>
 
-    <script>
-        let count = 0; 
-
-        function increment() {
-            count++;
-            document.getElementById("counter").value = count;
-        }
-
-        function decrement() {
-            count--;
-           document.getElementById("counter").value = count;
-
-    
-}
-        function clearCounter(){
-            count = 0
-            document.getElementById("counter").value = 0;
-        }
-        document.onkeydown = function(e){
-            if(e.key =='ArrowUp') increment();
-            if(e.key =='ArrowDown') decrement();
-            if(e.key =='space') increment();
-
-    }
-    </script>
+    <script src="counter.js"> </script>
 </body>
 
 </html>
